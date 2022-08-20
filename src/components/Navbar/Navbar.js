@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import Search from "@mui/icons-material/Search";
+import Badge from "@mui/material/Badge";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Navbar = () => {
     return (
@@ -20,7 +22,11 @@ const Navbar = () => {
             <div className="flex-1 flex justify-end items-center">
                 <div>REGISTER</div>
                 <div>SIGNIN</div>
-                <div>CART</div>
+                <div>
+                    <Badge badgeContent={4} color="primary">
+                        <ShoppingCartOutlinedIcon color="action" />
+                    </Badge>
+                </div>
 
             </div>
         </div>
