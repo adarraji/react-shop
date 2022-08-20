@@ -5,7 +5,9 @@ const Navbar = () => {
     return (
         <div className="bg-light-gray h3 pa1 flex justify-between items-center">
             <div className="flex-1">
-                <div>{"EN"}</div>
+                <div className="f5 pointer">
+                    {"EN"}
+                </div>
                 <div>
                     <input />
                 </div>
