@@ -6,7 +6,15 @@ import { sliderItems } from "../../data";
 
 const Slider = () => {
     return (
-        <div>slider</div>
+        <div>
+            <div>
+                <ArrowLeftIcon />
+            </div>
+            <div>WRAPPER</div>
+            <div>
+                <ArrowRightIcon />
+            </div>
+        </div>
     )
 }
 
