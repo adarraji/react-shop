@@ -10,7 +10,22 @@ const Slider = () => {
             <div className="slider-arrow w2 h2 flex justify-center absolute top-0 bottom-0 pointer o-50 z-2 left-1">
                 <ArrowLeftIcon />
             </div>
-            <div>WRAPPER</div>
+            <div>
+                {
+                    sliderItems.map(item => (
+                        <div key={item.id}>
+                            <div>
+                                <img src={item.img} />
+                            </div>
+                            <div>
+                                <h1>{item.title}</h1>
+                                <p>{item.desc}</p>
+                                <button>SHOP NOW</button>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
             <div className="slider-arrow w2 h2 flex justify-center absolute top-0 bottom-0 pointer o-50 z-2 right-1">
                 <ArrowRightIcon />
             </div>
