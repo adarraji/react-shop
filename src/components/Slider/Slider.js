@@ -10,10 +10,10 @@ const Slider = () => {
             <div className="slider-arrow w2 h2 flex justify-center absolute top-0 bottom-0 pointer o-50 z-2 left-1">
                 <ArrowLeftIcon />
             </div>
-            <div>
+            <div className="h-100 flex">
                 {
                     sliderItems.map(item => (
-                        <div key={item.id}>
+                        <div key={item.id} className="slide flex items-center vh-100">
                             <div>
                                 <img src={item.img} />
                             </div>
