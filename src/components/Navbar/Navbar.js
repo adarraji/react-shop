@@ -17,7 +17,12 @@ const Navbar = () => {
             <div className="flex-1">
                 <h1 className="tc">Ecommerce Store</h1>
             </div>
-            <div className="flex-1">right</div>
+            <div className="flex-1 flex justify-end items-center">
+                <div>REGISTER</div>
+                <div>SIGNIN</div>
+                <div>CART</div>
+
+            </div>
         </div>
     )
 }
