@@ -14,10 +14,10 @@ const Slider = () => {
                 {
                     sliderItems.map(item => (
                         <div key={item.id} className="slide flex items-center vh-100">
-                            <div>
+                            <div className="flex-1 h-100 pl5 flex justify-end items-center">
                                 <img src={item.img} />
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <h1>{item.title}</h1>
                                 <p>{item.desc}</p>
                                 <button>SHOP NOW</button>

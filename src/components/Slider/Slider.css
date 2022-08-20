@@ -7,3 +7,11 @@
 .slide {
     width: 100vw;
 }
+
+.flex-1 {
+    flex: 1;
+}
+
+img {
+    max-height: 80%;
+}
