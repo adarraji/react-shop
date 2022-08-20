@@ -20,9 +20,9 @@ const Navbar = () => {
                 <h1 className="tc">Ecommerce Store</h1>
             </div>
             <div className="flex-1 flex justify-end items-center">
-                <div>REGISTER</div>
-                <div>SIGNIN</div>
-                <div>
+                <div className="f5 ml3 pointer">{"REGISTER"}</div>
+                <div className="f5 ml3 pointer">{"SIGNIN"}</div>
+                <div className="f5 ml3 pointer">
                     <Badge badgeContent={4} color="primary">
                         <ShoppingCartOutlinedIcon color="action" />
                     </Badge>
