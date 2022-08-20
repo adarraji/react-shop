@@ -14,7 +14,9 @@ const Navbar = () => {
                     <Search className="gray" style={{ fontSize: 16 }} />
                 </div>
             </div>
-            <div className="flex-1">center</div>
+            <div className="flex-1">
+                <h1 className="tc">Ecommerce Store</h1>
+            </div>
             <div className="flex-1">right</div>
         </div>
     )
