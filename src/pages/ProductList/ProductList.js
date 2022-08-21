@@ -8,6 +8,9 @@ const ProductList = () => {
         <div>
             <Announcement />
             <Navbar />
+            <div>
+                <h1 className="ma3">Dresses</h1>
+            </div>
         </div>
     )
 }
