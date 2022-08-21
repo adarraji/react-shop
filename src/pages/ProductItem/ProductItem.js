@@ -15,14 +15,14 @@ const ProductItem = () => {
                 <div className="flex-1">
                     <img className="w-100 vh-90 fit-cover" src="https://i.ibb.co/S6qMxwr/jean.jpg" />
                 </div>
-                <div className="flex-1">
-                    <h1>Denim Jumpsuit</h1>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                <div className="flex-1 pv0 ph4 tl">
+                    <h1 className="fw2">Denim Jumpsuit</h1>
+                    <p className="mv3 mh0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
                         iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
                         tristique tortor pretium ut. Curabitur elit justo, consequat id
                         condimentum ac, volutpat ornare.</p>
-                    <span>$20</span>
+                    <span className="fw1 f2">$20</span>
                     <div>
                         <div>
                             <span>Color</span>
