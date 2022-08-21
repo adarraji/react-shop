@@ -26,19 +26,19 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 pa3">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>Cart</li>
-                    <li>Man Fashion</li>
-                    <li>Woman Fashion</li>
-                    <li>Accessories</li>
-                    <li>My Account</li>
-                    <li>Order Tracking</li>
-                    <li>Wishlist</li>
-                    <li>Wishlist</li>
-                    <li>Terms</li>
+            <div className="flex-1 pa3 tl">
+                <h3 className="mb3">Useful Links</h3>
+                <ul className="ma0 pa0 list flex flex-wrap">
+                    <li className="mb1 w-50">Home</li>
+                    <li className="mb1 w-50">Cart</li>
+                    <li className="mb1 w-50">Man Fashion</li>
+                    <li className="mb1 w-50">Woman Fashion</li>
+                    <li className="mb1 w-50">Accessories</li>
+                    <li className="mb1 w-50">My Account</li>
+                    <li className="mb1 w-50">Order Tracking</li>
+                    <li className="mb1 w-50">Wishlist</li>
+                    <li className="mb1 w-50">Wishlist</li>
+                    <li className="mb1 w-50">Terms</li>
                 </ul>
             </div>
             <div className="flex-1 pa3">RIGHT</div>
