@@ -3,8 +3,9 @@
 }
 
 .product {
-    /* background-color: #f5fbfd; */
-    background-color: gray;
+    background-color: #f5fbfd;
+    min-width: 280px;
+    height: 350px;
 }
 
 .circle {
