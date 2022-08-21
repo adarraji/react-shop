@@ -24,6 +24,14 @@ const ProductList = () => {
                         <option value="yellow">Yellow</option>
                         <option value="green">Green</option>
                     </select>
+                    <select name="size" id="size" defaultValue={"DEFAULT"}>
+                        <option value="DEFAULT" disabled>Size</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
                 </div>
                 <div className="ma3">
                     <span className="f5 fw6">Sort Products:</span>
