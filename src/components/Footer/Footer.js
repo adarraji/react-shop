@@ -4,6 +4,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PinterestIcon from '@mui/icons-material/Pinterest';
+import RoomIcon from '@mui/icons-material/Room';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 
 const Footer = () => {
     return (
@@ -43,10 +46,19 @@ const Footer = () => {
             </div>
             <div className="flex-1 pa3 tl">
                 <h3>Contact</h3>
-                <div className="mb3 flex items-center">622 Dixie Path , South Tobinchester 98336</div>
-                <div className="mb3 flex items-center">+1 234 56 78</div>
-                <div className="mb3 flex items-center">contact@ad.dev</div>
-                <div>
+                <div className="mb3 flex items-center">
+                    <RoomIcon className="mr1" />
+                    622 Dixie Path , South Tobinchester 98336
+                </div>
+                <div className="mb3 flex items-center">
+                    <LocalPhoneIcon className="mr1" />
+                    +1 234 56 78
+                </div>
+                <div className="mb3 flex items-center">
+                    <MailOutlineIcon className="mr1" />
+                    contact@ad.dev
+                </div>
+                <div className="w-50">
                     <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} />
                 </div>
             </div>
