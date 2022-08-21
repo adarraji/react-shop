@@ -23,7 +23,7 @@ const Slider = () => {
                     sliderItems.map(item => (
                         <div key={item.id} className="slide flex justify-center items-center vh-100" style={{ background: `#${item.bg}` }}>
                             <div className="flex-1 h-100 pl5 flex justify-end items-center">
-                                <img src={item.img} />
+                                <img src={item.img} alt="slide" />
                             </div>
                             <div className="flex-1 pa6">
                                 <h1 className="f1">{item.title}</h1>
