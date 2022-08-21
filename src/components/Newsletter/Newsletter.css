@@ -7,3 +7,14 @@
     width: 50%;
     height: 40px;
 }
+
+input {
+    border: none;
+    flex: 8;
+}
+
+button {
+    flex: 1;
+    border: none;
+    background-color: teal;
+}
