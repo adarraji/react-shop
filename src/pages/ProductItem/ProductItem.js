@@ -11,11 +11,11 @@ const ProductItem = () => {
         <div>
             <Announcement />
             <Navbar />
-            <div>
-                <div>
-                    <img src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+            <div className="pa4 flex">
+                <div className="flex-1">
+                    <img className="w-100 vh-90 fit-cover" src="https://i.ibb.co/S6qMxwr/jean.jpg" />
                 </div>
-                <div>
+                <div className="flex-1">
                     <h1>Denim Jumpsuit</h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at

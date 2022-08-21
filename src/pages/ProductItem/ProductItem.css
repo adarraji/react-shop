@@ -1,0 +1,11 @@
+.flex-1 {
+    flex: 1;
+}
+
+.vh-90 {
+    height: 90vh
+}
+
+.fit-cover {
+    object-fit: cover;
+}
