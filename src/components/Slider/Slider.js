@@ -6,11 +6,11 @@ import { sliderItems } from "../../data";
 
 const Slider = () => {
     return (
-        <div className="w-100 vh-100 flex relative">
+        <div className="w-100 vh-100 flex relative overflow-hidden">
             <div className="slider-arrow w2 h2 flex justify-center absolute top-0 bottom-0 pointer o-50 z-2 left-1">
                 <ArrowLeftIcon />
             </div>
-            <div className="h-100 flex justify-center">
+            <div className="wrapper h-100 flex justify-center ">
                 {
                     sliderItems.map(item => (
                         <div key={item.id} className="slide flex justify-center items-center vh-100">
