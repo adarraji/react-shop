@@ -1,3 +1,8 @@
 .flex-1 {
     flex: 1;
 }
+
+.product {
+    /* background-color: #f5fbfd; */
+    background-color: gray;
+}
