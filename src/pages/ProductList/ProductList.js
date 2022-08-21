@@ -27,6 +27,11 @@ const ProductList = () => {
                 </div>
                 <div className="ma3">
                     <span className="f5 fw6">Sort Products:</span>
+                    <select name="sort" id="sort" defaultValue={"newest"}>
+                        <option value="newest">Newest</option>
+                        <option value="price-asc">Price (asc)</option>
+                        <option value="prrice-desc">Price (desc)</option>
+                    </select>
                 </div>
             </div>
             <Products />
