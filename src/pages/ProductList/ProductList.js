@@ -1,5 +1,4 @@
 import React from "react";
-import "./ProductList.css";
 import Announcement from "../../components/Announcement/Announcement";
 import Navbar from "../../components/Navbar/Navbar";
 import Products from "../../components/Products/Products";
