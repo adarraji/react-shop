@@ -8,13 +8,18 @@
     height: 40px;
 }
 
-input {
+.br-none {
     border: none;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-8 {
     flex: 8;
 }
 
-button {
-    flex: 1;
-    border: none;
+.bg-teal {
     background-color: teal;
 }
