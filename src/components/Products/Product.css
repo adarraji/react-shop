@@ -13,3 +13,13 @@
     height: 200px;
     border-radius: 50%;
 }
+
+.product-info {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.product:hover .product-info {
+    opacity: 1;
+}
