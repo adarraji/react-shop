@@ -41,7 +41,15 @@ const Footer = () => {
                     <li className="mb1 w-50">Terms</li>
                 </ul>
             </div>
-            <div className="flex-1 pa3">RIGHT</div>
+            <div className="flex-1 pa3">
+                <h3>Contact</h3>
+                <div>Address</div>
+                <div>Phone</div>
+                <div>Email</div>
+                <div>
+                    <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} />
+                </div>
+            </div>
         </div>
     )
 }
