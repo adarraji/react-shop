@@ -6,7 +6,7 @@ import CategoriesItem from "./CategoriesItem"
 
 const Categories = () => {
     return (
-        <div>
+        <div className="pa4 flex justify-between">
             {
                 categories.map(item => (
                     <CategoriesItem item={item} key={item.id} />
