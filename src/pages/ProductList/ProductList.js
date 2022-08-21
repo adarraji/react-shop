@@ -8,8 +8,8 @@ const ProductList = () => {
         <div>
             <Announcement />
             <Navbar />
-            <div>
-                <h1 className="ma3">Dresses</h1>
+            <h1 className="ma3">Dresses</h1>
+            <div className="flex justify-between">
                 <div>Filter1</div>
                 <div>Filter2</div>
             </div>
