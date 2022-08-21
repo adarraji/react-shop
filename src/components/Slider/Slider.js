@@ -23,12 +23,12 @@ const Slider = () => {
                     sliderItems.map(item => (
                         <div key={item.id} className="slide flex justify-center items-center vh-100" style={{ background: `#${item.bg}` }}>
                             <div className="flex-1 h-100 pl5 flex justify-end items-center">
-                                <img src={item.img} alt="slide" />
+                                <img src={item.img} alt="slide" className="mh100" />
                             </div>
                             <div className="flex-1 pa6">
                                 <h1 className="f1">{item.title}</h1>
                                 <p className="ma0 mt5 mb5 f3 fw5 tracked">{item.desc}</p>
-                                <button className="pa2 f5 pointer">SHOP NOW</button>
+                                <button className="pa2 f5 pointer bg-transparent">SHOP NOW</button>
                             </div>
                         </div>
                     ))

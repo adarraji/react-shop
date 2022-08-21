@@ -12,13 +12,14 @@
     flex: 1;
 }
 
-img {
+.mh100 {
     max-height: 100%;
 }
 
-button {
+.bg-transparent {
     background: transparent;
 }
+
 
 .wrapper {
     transform: translateX(0vw);
