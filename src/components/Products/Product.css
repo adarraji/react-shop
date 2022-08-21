@@ -23,3 +23,15 @@
 .product:hover .product-info {
     opacity: 1;
 }
+
+.product-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.product-info>.product-icon:hover {
+    background-color: #e9f5f5;
+    transform: scale(1.1);
+}

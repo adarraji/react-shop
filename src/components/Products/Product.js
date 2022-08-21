@@ -10,16 +10,14 @@ const Product = ({ item }) => {
             <div className="circle bg-white absolute"></div>
             <img className="h-75 z-2" src={item.img} />
             <div className="product-info w-100 h-100 absolute top-0 bottom-0 z-3 flex justify-center items-center pointer">
-                <div>
-                    <div>
-                        <ShoppingCartOutlinedIcon />
-                    </div>
-                    <div>
-                        <SearchOutlinedIcon />
-                    </div>
-                    <div>
-                        <FavoriteBorderOutlinedIcon />
-                    </div>
+                <div className="product-icon bg-white ma1 flex justify-center items-center">
+                    <ShoppingCartOutlinedIcon />
+                </div>
+                <div className="product-icon bg-white ma1 flex justify-center items-center">
+                    <SearchOutlinedIcon />
+                </div>
+                <div className="product-icon bg-white ma1 flex justify-center items-center">
+                    <FavoriteBorderOutlinedIcon />
                 </div>
             </div>
         </div>
