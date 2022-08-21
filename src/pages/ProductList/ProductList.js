@@ -10,6 +10,8 @@ const ProductList = () => {
             <Navbar />
             <div>
                 <h1 className="ma3">Dresses</h1>
+                <div>Filter1</div>
+                <div>Filter2</div>
             </div>
         </div>
     )
