@@ -18,7 +18,7 @@ const Slider = () => {
             <div onClick={() => onArrowClick("left")} className="slider-arrow w2 h2 flex justify-center absolute top-0 bottom-0 pointer o-50 z-2 left-1">
                 <ArrowLeftIcon />
             </div>
-            <div className="wrapper h-100 flex justify-center ">
+            <div className="wrapper h-100 flex justify-center" style={{ transform: `translateX(${slideIndex * -100}vw)` }}>
                 {
                     sliderItems.map(item => (
                         <div key={item.id} className="slide flex justify-center items-center vh-100">
@@ -28,7 +28,7 @@ const Slider = () => {
                             <div className="flex-1 pa6">
                                 <h1>{item.title}</h1>
                                 <p>{item.desc}</p>
-                                <button>SHOP NOW</button>
+                                <button className="pa2 f5 pointer">SHOP NOW</button>
                             </div>
                         </div>
                     ))
