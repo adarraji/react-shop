@@ -41,11 +41,11 @@ const Footer = () => {
                     <li className="mb1 w-50">Terms</li>
                 </ul>
             </div>
-            <div className="flex-1 pa3">
+            <div className="flex-1 pa3 tl">
                 <h3>Contact</h3>
-                <div>Address</div>
-                <div>Phone</div>
-                <div>Email</div>
+                <div className="mb3 flex items-center">622 Dixie Path , South Tobinchester 98336</div>
+                <div className="mb3 flex items-center">+1 234 56 78</div>
+                <div className="mb3 flex items-center">contact@ad.dev</div>
                 <div>
                     <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} />
                 </div>
