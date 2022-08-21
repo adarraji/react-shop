@@ -2,6 +2,6 @@
     flex: 1;
 }
 
-img {
+.fit-cover {
     object-fit: cover;
 }
