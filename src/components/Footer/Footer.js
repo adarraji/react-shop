@@ -9,19 +9,19 @@ const Footer = () => {
     return (
         <div className="flex">
             <div className="flex-1 pa3 flex flex-column tl">
-                <h1 className="pl3">Ecommerce Store</h1>
-                <div className="ma0 mt2 mb2 pl3">{"There are many variations of passages of Lorem Ipsum available, but The majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable."}</div>
+                <h1 className="pl2">Ecommerce Store</h1>
+                <div className="ma0 mt2 mb2 pl2">{"There are many variations of passages of Lorem Ipsum available, but The majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable."}</div>
                 <div className="flex">
-                    <div>
+                    <div className="circle-40 white ma2 flex justify-center items-center bg-facebook">
                         <FacebookIcon />
                     </div>
-                    <div>
+                    <div className="circle-40 white ma2 flex justify-center items-center bg-instagram">
                         <InstagramIcon />
                     </div>
-                    <div>
+                    <div className="circle-40 white ma2 flex justify-center items-center bg-twitter">
                         <TwitterIcon />
                     </div>
-                    <div>
+                    <div className="circle-40 white ma2 flex justify-center items-center bg-pintrest">
                         <PinterestIcon />
                     </div>
                 </div>
