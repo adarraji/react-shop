@@ -15,6 +15,15 @@ const ProductList = () => {
             <div className="flex justify-between">
                 <div className="ma3">
                     <span className="f5 fw6">Filter Products:</span>
+                    <select name="color" id="color" defaultValue={"DEFAULT"}>
+                        <option value="DEFAULT" disabled>Color</option>
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                    </select>
                 </div>
                 <div className="ma3">
                     <span className="f5 fw6">Sort Products:</span>
