@@ -13,8 +13,12 @@ const ProductList = () => {
             <Navbar />
             <h1 className="ma3">Dresses</h1>
             <div className="flex justify-between">
-                <div className="ma3">Filter1</div>
-                <div className="ma3">Filter2</div>
+                <div className="ma3">
+                    <span className="f5 fw6">Filter Products:</span>
+                </div>
+                <div className="ma3">
+                    <span className="f5 fw6">Sort Products:</span>
+                </div>
             </div>
             <Products />
             <Newsletter />
