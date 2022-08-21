@@ -5,9 +5,9 @@ import SendIcon from '@mui/icons-material/Send';
 
 const Newsletter = () => {
     return (
-        <div>
-            <h1>Newsletter</h1>
-            <div>Get timely updates from your favorite products.</div>
+        <div className="newsletter flex justify-center items-center flex-column">
+            <h1 className="f1 mb3">Newsletter</h1>
+            <div className="f3 fw5 mb3">Get timely updates from your favorite products.</div>
             <div>
                 <input placeholder="Your email" />
                 <button>
