@@ -27,7 +27,7 @@ const Slider = () => {
                             </div>
                             <div className="flex-1 pa6">
                                 <h1>{item.title}</h1>
-                                <p>{item.desc}</p>
+                                <p className="ma0 mt5 mb5 f3 fw5 tracked">{item.desc}</p>
                                 <button className="pa2 f5 pointer">SHOP NOW</button>
                             </div>
                         </div>
