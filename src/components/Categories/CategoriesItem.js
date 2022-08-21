@@ -3,7 +3,7 @@ import "./CategoriesItem.css";
 
 const CategoriesItem = ({ item }) => {
     return (
-        <div>
+        <div className="flex-1 ma1 vh-75 relative">
             <img src={item.img} />
             <div>
                 <h1>{item.title}</h1>
