@@ -1,5 +1,9 @@
 .newsletter {
     height: 60vh;
     background-color: #fcf5f5;
+}
 
+.input-container {
+    width: 50%;
+    height: 40px;
 }

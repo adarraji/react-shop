@@ -8,7 +8,7 @@ const Newsletter = () => {
         <div className="newsletter flex justify-center items-center flex-column">
             <h1 className="f1 mb3">Newsletter</h1>
             <div className="f3 fw5 mb3">Get timely updates from your favorite products.</div>
-            <div>
+            <div className="input-container bg-white flex justify-between ba b--light-silver">
                 <input placeholder="Your email" />
                 <button>
                     <SendIcon />
