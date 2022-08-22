@@ -31,8 +31,8 @@ const ProductItem = () => {
                             <div>gray</div>
                         </div>
                         <div className="flex items-center">
+                            <span>Size</span>
                             <select name="size" id="size" defaultValue={"DEFAULT"}>
-                                <option value="DEFAULT" disabled>Size</option>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
