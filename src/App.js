@@ -1,9 +1,6 @@
 
 import "./App.css";
-import Product from "./components/Products/Product";
-import Home from "./pages/Home/Home";
-import ProductList from "./pages/ProductList/ProductList";
-import ProductItem from "./pages/ProductItem/ProductItem";
+import ProductItem from "./pages/ProductItem";
 
 function App() {
   return (

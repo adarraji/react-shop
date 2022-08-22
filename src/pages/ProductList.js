@@ -1,9 +1,9 @@
 import React from "react";
-import Announcement from "../../components/Announcement/Announcement";
-import Navbar from "../../components/Navbar/Navbar";
-import Products from "../../components/Products/Products";
-import Newsletter from "../../components/Newsletter/Newsletter";
-import Footer from "../../components/Footer/Footer";
+import Announcement from "../components/Announcement/Announcement";
+import Navbar from "../components/Navbar/Navbar";
+import Products from "../components/Products/Products";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
 
 const ProductList = () => {
     return (
