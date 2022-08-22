@@ -15,7 +15,7 @@ const ProductItem = () => {
                 <div className="flex-1">
                     <img className="w-100 vh-90 fit-cover" src="https://i.ibb.co/S6qMxwr/jean.jpg" alt="product" />
                 </div>
-                <div className="flex-1 pv0 ph4 tl">
+                <div className="flex-1 pv0 ph5 tl">
                     <h1 className="fw2">Denim Jumpsuit</h1>
                     <p className="mv3 mh0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                         venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
@@ -23,7 +23,7 @@ const ProductItem = () => {
                         tristique tortor pretium ut. Curabitur elit justo, consequat id
                         condimentum ac, volutpat ornare.</p>
                     <span className="fw1 f2">$20</span>
-                    <div>
+                    <div className="w-50 mv4 mh0 flex justify-between">
                         <div>
                             <span>Color</span>
                             <div>black</div>
