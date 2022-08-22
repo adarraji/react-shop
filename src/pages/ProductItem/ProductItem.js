@@ -13,7 +13,7 @@ const ProductItem = () => {
             <Navbar />
             <div className="pa4 flex">
                 <div className="flex-1">
-                    <img className="w-100 vh-90 fit-cover" src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+                    <img className="w-100 vh-90 fit-cover" src="https://i.ibb.co/S6qMxwr/jean.jpg" alt="product" />
                 </div>
                 <div className="flex-1 pv0 ph4 tl">
                     <h1 className="fw2">Denim Jumpsuit</h1>

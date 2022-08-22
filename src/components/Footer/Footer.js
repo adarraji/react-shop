@@ -59,7 +59,7 @@ const Footer = () => {
                     contact@ad.dev
                 </div>
                 <div className="w-50">
-                    <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} />
+                    <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} alt="payment" />
                 </div>
             </div>
         </div>
