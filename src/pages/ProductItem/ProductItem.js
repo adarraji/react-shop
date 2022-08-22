@@ -32,7 +32,7 @@ const ProductItem = () => {
                         </div>
                         <div className="flex items-center">
                             <span className="f3 fw2">Size</span>
-                            <select name="size" id="size" defaultValue={"DEFAULT"}>
+                            <select className="ml3 pa1" name="size" id="size" defaultValue={"DEFAULT"}>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
