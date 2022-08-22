@@ -26,9 +26,9 @@ const ProductItem = () => {
                     <div className="w-50 mv4 mh0 flex justify-between">
                         <div className="flex items-center">
                             <span className="f3 fw2">Color</span>
-                            <div className="circle-20 bg-black"></div>
-                            <div className="circle-20 bg-dark-blue"></div>
-                            <div className="circle-20 bg-gray"></div>
+                            <div className="circle-20 bg-black mv0 mh1"></div>
+                            <div className="circle-20 bg-dark-blue mv0 mh1"></div>
+                            <div className="circle-20 bg-gray mv0 mh1"></div>
                         </div>
                         <div className="flex items-center">
                             <span className="f3 fw2">Size</span>
