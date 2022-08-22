@@ -25,13 +25,13 @@ const ProductItem = () => {
                     <span className="fw1 f2">$20</span>
                     <div className="w-50 mv4 mh0 flex justify-between">
                         <div className="flex items-center">
-                            <span>Color</span>
-                            <div>black</div>
-                            <div>darkblue</div>
-                            <div>gray</div>
+                            <span className="f3 fw2">Color</span>
+                            <div className="circle-20 bg-black"></div>
+                            <div className="circle-20 bg-dark-blue"></div>
+                            <div className="circle-20 bg-gray"></div>
                         </div>
                         <div className="flex items-center">
-                            <span>Size</span>
+                            <span className="f3 fw2">Size</span>
                             <select name="size" id="size" defaultValue={"DEFAULT"}>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
