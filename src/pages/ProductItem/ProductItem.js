@@ -24,13 +24,13 @@ const ProductItem = () => {
                         condimentum ac, volutpat ornare.</p>
                     <span className="fw1 f2">$20</span>
                     <div className="w-50 mv4 mh0 flex justify-between">
-                        <div>
+                        <div className="flex items-center">
                             <span>Color</span>
                             <div>black</div>
                             <div>darkblue</div>
                             <div>gray</div>
                         </div>
-                        <div>
+                        <div className="flex items-center">
                             <select name="size" id="size" defaultValue={"DEFAULT"}>
                                 <option value="DEFAULT" disabled>Size</option>
                                 <option value="xs">XS</option>
