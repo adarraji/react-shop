@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
 import styled from 'styled-components';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
 
 const ProductItem = () => {
     return (
@@ -40,6 +42,14 @@ const ProductItem = () => {
                             </FilterSize>
                         </Filter>
                     </FilterContainer>
+                    <AddContainer>
+                        <AmountContainer>
+                            <RemoveIcon />
+                            <Amount>1</Amount>
+                            <AddIcon />
+                        </AmountContainer>
+                        <Button>ADD TO CART</Button>
+                    </AddContainer>
                 </InfoContainer>
             </Wrapper>
             <Newsletter />
@@ -116,6 +126,22 @@ const FilterSize = styled.select.attrs({
 })``;
 
 const FilterSizeOption = styled.option``;
+
+const AddContainer = styled.div.attrs({
+    className: "flex items-center justify-between w-50"
+})``;
+
+const AmountContainer = styled.div.attrs({
+    className: "flex items-center fw7"
+})``;
+
+const Amount = styled.span`
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+`;
+
+const Button = styled.button``;
 
 
 
