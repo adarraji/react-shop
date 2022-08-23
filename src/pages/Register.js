@@ -1,9 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
 
+const Container = styled.div``;
+
 const Register = () => {
     return (
-        <div>Register</div>
+        <Container>Register</Container>
     )
 }
 
