@@ -21,9 +21,7 @@ const Cart = () => {
     )
 }
 
-const Container = styled.div.attrs({
-    className: ""
-})``;
+const Container = styled.div``;
 
 const Wrapper = styled.div.attrs({
     className: "pa3"
@@ -33,7 +31,9 @@ const Title = styled.h1.attrs({
     className: "fw3 tc"
 })``;
 
-const Top = styled.div``;
+const Top = styled.div.attrs({
+    className: "flex items-center justify-between"
+})``;
 
 const Bottom = styled.div``;
 
