@@ -24,19 +24,45 @@ const Register = () => {
     )
 }
 
-const Container = styled.div``;
+const Container = styled.div.attrs({
+    className: "w-100 vh-100 flex items-center justify-center"
+})`
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
+`;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div.attrs({
+    className: "pa3 w-40 bg-white tl"
+})`
+`;
 
-const Title = styled.div``;
+const Title = styled.h1.attrs({
+    className: "f3 fw3"
+})`
+`;
 
-const Form = styled.div``;
+const Form = styled.form.attrs({
+    className: "flex flex-wrap"
+})`
+`;
 
-const Input = styled.div``;
+const Input = styled.input.attrs({
+    className: "mv2 mh1 pa2 f6"
+})`
+    flex: 1;
+    min-width: 40%;
+`;
 
-const Agreement = styled.div``;
+const Agreement = styled.span.attrs({
+    className: "f7 mv3 mh0"
+})`  
+`;
 
-const Button = styled.div``;
+const Button = styled.button.attrs({
+    className: "w-40 pv2 ph3 white pointer f6"
+})`
+    border: none;
+    background-color: teal;    
+`;
 
 
 export default Register
