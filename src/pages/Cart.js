@@ -16,6 +16,8 @@ const Cart = () => {
     )
 }
 
-const Container = styled.div``;
+const Container = styled.div.attrs({
+    className: "tl"
+})``;
 
 export default Cart
