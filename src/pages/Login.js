@@ -42,7 +42,7 @@ const Form = styled.form.attrs({
 `;
 
 const Input = styled.input.attrs({
-    className: "mv2 mh1 pa2 f6"
+    className: "mv2 mh0 pa2 f6"
 })`
     flex: 1;
     min-width: 40%;
