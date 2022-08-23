@@ -49,13 +49,15 @@ const Input = styled.input.attrs({
 `;
 
 const Button = styled.button.attrs({
-    className: "w-40 pv2 ph3 white pointer f6"
+    className: "w-40 pv2 ph3 white pointer f6 mv2"
 })`
     border: none;
     background-color: teal;    
 `;
 
-const Link = styled.a``;
+const Link = styled.a.attrs({
+    className: "mv2 mh0 f7 underline pointer"
+})``;
 
 
 export default Login
