@@ -13,7 +13,10 @@ const Cart = () => {
             <Navbar />
             <Wrapper>
                 <Title>YOUR BAG</Title>
-                <Top></Top>
+                <Top>
+                    <TopButton>CONTINUE SHOPPING</TopButton>
+                    <TopButton>CHECKOUT NOW</TopButton>
+                </Top>
                 <Bottom></Bottom>
             </Wrapper>
             <Footer />
@@ -33,6 +36,10 @@ const Title = styled.h1.attrs({
 
 const Top = styled.div.attrs({
     className: "flex items-center justify-between"
+})``;
+
+const TopButton = styled.button.attrs({
+    className: "pa2 fw6 pointer"
 })``;
 
 const Bottom = styled.div``;
