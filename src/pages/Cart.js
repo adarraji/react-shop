@@ -22,12 +22,16 @@ const Cart = () => {
 }
 
 const Container = styled.div.attrs({
-    className: "tl"
+    className: ""
 })``;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div.attrs({
+    className: "pa3"
+})``;
 
-const Title = styled.h1``;
+const Title = styled.h1.attrs({
+    className: "fw3 tc"
+})``;
 
 const Top = styled.div``;
 
