@@ -135,13 +135,24 @@ const AmountContainer = styled.div.attrs({
     className: "flex items-center fw7"
 })``;
 
-const Amount = styled.span`
+const Amount = styled.span.attrs({
+    className: "ba flex items-center justify-center mv0 mh2"
+})`
     width: 30px;
     height: 30px;
     border-radius: 10px;
+    color: teal;
 `;
 
-const Button = styled.button``;
+const Button = styled.button.attrs({
+    className: "pa2 bg-white pointer fw5"
+})`
+    border: 2px solid teal;
+    
+    &:hover {
+        background: #f8f4f4;
+    }
+`;
 
 
 
