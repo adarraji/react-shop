@@ -27,7 +27,7 @@ const Container = styled.div.attrs({
 `;
 
 const Wrapper = styled.div.attrs({
-    className: "pa3 w-40 bg-white tl"
+    className: "pa3 w-30 bg-white tl"
 })`
 `;
 
@@ -37,7 +37,7 @@ const Title = styled.h1.attrs({
 `;
 
 const Form = styled.form.attrs({
-    className: "flex flex-wrap"
+    className: "flex flex-column"
 })`
 `;
 
