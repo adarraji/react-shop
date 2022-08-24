@@ -202,7 +202,9 @@ const Summary = styled.div.attrs({
 `;
 
 
-const SummaryTitle = styled.h1``;
+const SummaryTitle = styled.h1.attrs({
+    className: "fw2"
+})``;
 
 const SummaryItem = styled.div``;
 
