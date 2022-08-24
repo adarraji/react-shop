@@ -42,7 +42,7 @@ const Cart = () => {
                             <PriceDetail>
                                 <ProductAmountContainer>
                                     <AddIcon />
-                                    <ProductAmount>1</ProductAmount>
+                                    <ProductAmount>2</ProductAmount>
                                     <RemoveIcon />
                                 </ProductAmountContainer>
                                 <ProductPrice>$ 20</ProductPrice>
@@ -136,18 +136,16 @@ const PriceDetail = styled.div.attrs({
     flex:1;
 `;
 
-const ProductAmountContainer = styled.div``;
+const ProductAmountContainer = styled.div.attrs({
+    className: "flex items-center mb3"
+})``;
 
+const ProductAmount = styled.div.attrs({
+    className: "f4 ma2"
+})``;
 
-
-const ProductAmount = styled.div``;
-
-
-const ProductPrice = styled.div``;
-
-
-
-
-
+const ProductPrice = styled.div.attrs({
+    className: "f3 fw2"
+})``;
 
 export default Cart
