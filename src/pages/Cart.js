@@ -38,11 +38,11 @@ const Cart = () => {
                                 </Details>
                             </ProductDetail>
                             <PriceDetail>
-                                {/* <ProductAmountContainer>
+                                <ProductAmountContainer>
                                     <Add />
                                     <ProductAmount>1</ProductAmount>
                                     <Remove />
-                                </ProductAmountContainer> */}
+                                </ProductAmountContainer>
                             </PriceDetail>
                         </Product>
                     </Info>
@@ -100,19 +100,28 @@ const Product = styled.div``;
 
 const ProductDetail = styled.div``;
 
-const Image = styled.div``;
+const Image = styled.img``;
 
 const Details = styled.div``;
 
-const ProductName = styled.div``;
+const ProductName = styled.span``;
 
-const ProductId = styled.div``;
+const ProductId = styled.span``;
 
 const ProductColor = styled.div``;
 
-const ProductSize = styled.div``;
+const ProductSize = styled.span``;
 
 const PriceDetail = styled.div``;
+
+const ProductAmountContainer = styled.div``;
+
+const Add = styled.div``;
+
+const ProductAmount = styled.div``;
+
+const Remove = styled.div``;
+
 
 
 export default Cart
