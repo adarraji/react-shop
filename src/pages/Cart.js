@@ -37,7 +37,7 @@ const Title = styled.h1.attrs({
 })``;
 
 const Top = styled.div.attrs({
-    className: "flex items-center justify-between"
+    className: "flex items-center justify-between pa3"
 })``;
 
 const TopButton = styled.button.attrs({
