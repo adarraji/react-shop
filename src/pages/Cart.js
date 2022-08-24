@@ -75,7 +75,26 @@ const Cart = () => {
                             </PriceDetail>
                         </Product>
                     </Info>
-                    <Summary>Summary</Summary>
+                    <Summary>
+                        <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Estimated Shipping</SummaryItemText>
+                            <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem>
+                            <SummaryItemText>Shipping Discount</SummaryItemText>
+                            <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryItem type="total">
+                            <SummaryItemText>Total</SummaryItemText>
+                            <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        </SummaryItem>
+                        <SummaryButton>CHECKPUT NOW</SummaryButton>
+                    </Summary>
                 </Bottom>
             </Wrapper>
             <Footer />
@@ -126,11 +145,6 @@ const HR = styled.hr`
     height: 1px
 `;
 
-const Summary = styled.div`
-    flex:1;
-`;
-
-
 const Product = styled.div.attrs({
     className: "flex flex-between"
 })``;
@@ -179,5 +193,23 @@ const ProductAmount = styled.div.attrs({
 const ProductPrice = styled.div.attrs({
     className: "f3 fw2"
 })``;
+
+
+const Summary = styled.div`
+    flex:1;
+`;
+
+
+const SummaryTitle = styled.h1``;
+
+const SummaryItem = styled.div``;
+
+const SummaryItemText = styled.span``;
+
+const SummaryItemPrice = styled.span``;
+
+const SummaryButton = styled.button``;
+
+
 
 export default Cart
