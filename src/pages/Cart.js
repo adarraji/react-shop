@@ -20,7 +20,32 @@ const Cart = () => {
                     <TopButton type="filled">CHECKOUT NOW</TopButton>
                 </Top>
                 <Bottom>
-                    <Info>Info</Info>
+                    <Info>
+                        <Product>
+                            <ProductDetail>
+                                <Image src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1614188818-TD1MTHU_SHOE_ANGLE_GLOBAL_MENS_TREE_DASHERS_THUNDER_b01b1013-cd8d-48e7-bed9-52db26515dc4.png?crop=1xw:1.00xh;center,top&resize=480%3A%2A"></Image>
+                                <Details>
+                                    <ProductName>
+                                        JESSIE THUNDER SHOES
+                                    </ProductName>
+                                    <ProductId>
+                                        <b>ID:</b> 93813718293
+                                    </ProductId>
+                                    <ProductColor color="black" />
+                                    <ProductSize>
+                                        <b>Size:</b> 37.5
+                                    </ProductSize>
+                                </Details>
+                            </ProductDetail>
+                            <PriceDetail>
+                                {/* <ProductAmountContainer>
+                                    <Add />
+                                    <ProductAmount>1</ProductAmount>
+                                    <Remove />
+                                </ProductAmountContainer> */}
+                            </PriceDetail>
+                        </Product>
+                    </Info>
                     <Summary>Summary</Summary>
                 </Bottom>
             </Wrapper>
@@ -69,5 +94,25 @@ const Info = styled.div`
 const Summary = styled.div`
     flex:1;
 `;
+
+
+const Product = styled.div``;
+
+const ProductDetail = styled.div``;
+
+const Image = styled.div``;
+
+const Details = styled.div``;
+
+const ProductName = styled.div``;
+
+const ProductId = styled.div``;
+
+const ProductColor = styled.div``;
+
+const ProductSize = styled.div``;
+
+const PriceDetail = styled.div``;
+
 
 export default Cart
