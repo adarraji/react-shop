@@ -43,6 +43,7 @@ const Top = styled.div.attrs({
 const TopButton = styled.button.attrs({
     className: "pa2 fw6 pointer"
 })`
+    border:  props.type === "filled" && "none"};
     background-color: ${props => props.type === "filled" ? "black" : "transparent"};
     color: ${props => props.type === "filled" && "white"};
 `;
