@@ -120,7 +120,11 @@ const Info = styled.div`
     flex:3;
 `;
 
-const HR = styled.hr``;
+const HR = styled.hr`
+    background-color: #eee;
+    border: none;
+    height: 1px
+`;
 
 const Summary = styled.div`
     flex:1;
