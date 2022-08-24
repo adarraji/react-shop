@@ -37,13 +37,13 @@ const Title = styled.h1.attrs({
 })``;
 
 const Top = styled.div.attrs({
-    className: "flex items-center justify-between pa3"
+    className: "flex items-center justify-between"
 })``;
 
 const TopButton = styled.button.attrs({
     className: "pa2 fw6 pointer"
 })`
-    border:  props.type === "filled" && "none"};
+    border: ${props => props.type === "filled" && "none"};
     background-color: ${props => props.type === "filled" ? "black" : "transparent"};
     color: ${props => props.type === "filled" && "white"};
 `;
