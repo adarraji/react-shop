@@ -196,7 +196,7 @@ const ProductPrice = styled.div.attrs({
 
 
 const Summary = styled.div.attrs({
-    className: "ba b--light-gray br4 pa3"
+    className: "ba b--light-gray br4 pa3 vh-50"
 })`
     flex:1;
 `;
