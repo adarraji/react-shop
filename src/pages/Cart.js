@@ -19,7 +19,10 @@ const Cart = () => {
                     </TopTexts>
                     <TopButton type="filled">CHECKOUT NOW</TopButton>
                 </Top>
-                <Bottom></Bottom>
+                <Bottom>
+                    <Info>Info</Info>
+                    <Summary>Summary</Summary>
+                </Bottom>
             </Wrapper>
             <Footer />
         </Container>
@@ -55,6 +58,16 @@ const TopText = styled.span.attrs({
 })``;
 
 
-const Bottom = styled.div``;
+const Bottom = styled.div.attrs({
+    className: "flex justify-between tl"
+})``;
+
+const Info = styled.div`
+    flex:3;
+`;
+
+const Summary = styled.div`
+    flex:1;
+`;
 
 export default Cart
