@@ -38,11 +38,12 @@ const Cart = () => {
                                 </Details>
                             </ProductDetail>
                             <PriceDetail>
-                                <ProductAmountContainer>
+                                {/* <ProductAmountContainer>
                                     <Add />
                                     <ProductAmount>1</ProductAmount>
                                     <Remove />
-                                </ProductAmountContainer>
+                                </ProductAmountContainer> */}
+                                prices
                             </PriceDetail>
                         </Product>
                     </Info>
@@ -96,7 +97,9 @@ const Summary = styled.div`
 `;
 
 
-const Product = styled.div``;
+const Product = styled.div.attrs({
+    className: "flex flex-between"
+})``;
 
 const ProductDetail = styled.div``;
 
