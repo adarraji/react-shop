@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement/Announcement";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
 
 const Cart = () => {
     return (
@@ -38,12 +40,12 @@ const Cart = () => {
                                 </Details>
                             </ProductDetail>
                             <PriceDetail>
-                                {/* <ProductAmountContainer>
-                                    <Add />
+                                <ProductAmountContainer>
+                                    <AddIcon />
                                     <ProductAmount>1</ProductAmount>
-                                    <Remove />
-                                </ProductAmountContainer> */}
-                                prices
+                                    <RemoveIcon />
+                                </ProductAmountContainer>
+                                <ProductPrice>$ 20</ProductPrice>
                             </PriceDetail>
                         </Product>
                     </Info>
@@ -136,11 +138,15 @@ const PriceDetail = styled.div.attrs({
 
 const ProductAmountContainer = styled.div``;
 
-const Add = styled.div``;
+
 
 const ProductAmount = styled.div``;
 
-const Remove = styled.div``;
+
+const ProductPrice = styled.div``;
+
+
+
 
 
 
