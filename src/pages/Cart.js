@@ -195,7 +195,9 @@ const ProductPrice = styled.div.attrs({
 })``;
 
 
-const Summary = styled.div`
+const Summary = styled.div.attrs({
+    className: "ba b--light-gray br4 pa3"
+})`
     flex:1;
 `;
 
