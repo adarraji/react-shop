@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Announcement from "../components/Announcement/Announcement";
 import Navbar from "../components/Navbar/Navbar";
-import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
-import { style } from "@mui/system";
 
 const Cart = () => {
     return (
@@ -15,6 +13,10 @@ const Cart = () => {
                 <Title>YOUR BAG</Title>
                 <Top>
                     <TopButton>CONTINUE SHOPPING</TopButton>
+                    <TopTexts>
+                        <TopText>Shopping bag</TopText>
+                        <TopText>Your Wishlist</TopText>
+                    </TopTexts>
                     <TopButton>CHECKOUT NOW</TopButton>
                 </Top>
                 <Bottom></Bottom>
@@ -41,6 +43,11 @@ const Top = styled.div.attrs({
 const TopButton = styled.button.attrs({
     className: "pa2 fw6 pointer"
 })``;
+
+const TopTexts = styled.div``;
+
+const TopText = styled.span``;
+
 
 const Bottom = styled.div``;
 
