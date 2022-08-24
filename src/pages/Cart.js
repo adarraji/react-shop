@@ -207,7 +207,7 @@ const SummaryTitle = styled.h1.attrs({
 })``;
 
 const SummaryItem = styled.div.attrs({
-    className: "mv3 mh0 flex justify-between"
+    className: "mv4 mh0 flex justify-between"
 })`
     font-weight: ${props => props.type === "total" && "500"};
     font-size: ${props => props.type === "total" && "24px"};
