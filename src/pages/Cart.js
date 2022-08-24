@@ -93,7 +93,7 @@ const Cart = () => {
                             <SummaryItemText>Total</SummaryItemText>
                             <SummaryItemPrice>$ 80</SummaryItemPrice>
                         </SummaryItem>
-                        <SummaryButton>CHECKPUT NOW</SummaryButton>
+                        <SummaryButton>CHECKOUT NOW</SummaryButton>
                     </Summary>
                 </Bottom>
             </Wrapper>
@@ -217,7 +217,9 @@ const SummaryItemText = styled.span``;
 
 const SummaryItemPrice = styled.span``;
 
-const SummaryButton = styled.button``;
+const SummaryButton = styled.button.attrs({
+    className: "w-100 pa3 white bg-black fw6"
+})``;
 
 
 
