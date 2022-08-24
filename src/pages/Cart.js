@@ -128,7 +128,9 @@ const ProductColor = styled.div`
 
 const ProductSize = styled.span``;
 
-const PriceDetail = styled.div`
+const PriceDetail = styled.div.attrs({
+    className: "flex items-center justify-center flex-column"
+})`
     flex:1;
 `;
 
