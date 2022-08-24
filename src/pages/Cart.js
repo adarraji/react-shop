@@ -17,7 +17,7 @@ const Cart = () => {
                         <TopText>Shopping bag(4)</TopText>
                         <TopText>Your Wishlist(0)</TopText>
                     </TopTexts>
-                    <TopButton>CHECKOUT NOW</TopButton>
+                    <TopButton type="filled">CHECKOUT NOW</TopButton>
                 </Top>
                 <Bottom></Bottom>
             </Wrapper>
@@ -42,7 +42,10 @@ const Top = styled.div.attrs({
 
 const TopButton = styled.button.attrs({
     className: "pa2 fw6 pointer"
-})``;
+})`
+    background-color: ${props => props.type === "filled" ? "black" : "transparent"};
+    color: ${props => props.type === "filled" && "white"};
+`;
 
 const TopTexts = styled.div``;
 
