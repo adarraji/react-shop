@@ -206,7 +206,9 @@ const SummaryTitle = styled.h1.attrs({
     className: "fw2"
 })``;
 
-const SummaryItem = styled.div``;
+const SummaryItem = styled.div.attrs({
+    className: "mv3 mh0 flex justify-between"
+})``;
 
 const SummaryItemText = styled.span``;
 
