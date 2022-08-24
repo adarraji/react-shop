@@ -111,7 +111,9 @@ const Image = styled.img`
     width: 200px;
 `;
 
-const Details = styled.div``;
+const Details = styled.div.attrs({
+    className: "pa3 flex flex-column justify-around"
+})``;
 
 const ProductName = styled.span``;
 
