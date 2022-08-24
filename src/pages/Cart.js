@@ -14,8 +14,8 @@ const Cart = () => {
                 <Top>
                     <TopButton>CONTINUE SHOPPING</TopButton>
                     <TopTexts>
-                        <TopText>Shopping bag</TopText>
-                        <TopText>Your Wishlist</TopText>
+                        <TopText>Shopping bag(4)</TopText>
+                        <TopText>Your Wishlist(0)</TopText>
                     </TopTexts>
                     <TopButton>CHECKOUT NOW</TopButton>
                 </Top>
@@ -46,7 +46,9 @@ const TopButton = styled.button.attrs({
 
 const TopTexts = styled.div``;
 
-const TopText = styled.span``;
+const TopText = styled.span.attrs({
+    className: "underline pointer mv0 mh2"
+})``;
 
 
 const Bottom = styled.div``;
