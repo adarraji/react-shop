@@ -88,7 +88,7 @@ const Cart = () => {
                         <SummaryItem>
                             <SummaryItemText>Shipping Discount</SummaryItemText>
                             <SummaryItemPrice>$ -5.90</SummaryItemPrice>
-                        </SummaryItem>
+                        </SummaryItem >
                         <SummaryItem type="total">
                             <SummaryItemText>Total</SummaryItemText>
                             <SummaryItemPrice>$ 80</SummaryItemPrice>
@@ -208,7 +208,10 @@ const SummaryTitle = styled.h1.attrs({
 
 const SummaryItem = styled.div.attrs({
     className: "mv3 mh0 flex justify-between"
-})``;
+})`
+    font-weight: ${props => props.type === "total" && "500"};
+    font-size: ${props => props.type === "total" && "24px"};
+`;
 
 const SummaryItemText = styled.span``;
 
