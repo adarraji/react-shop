@@ -101,9 +101,15 @@ const Product = styled.div.attrs({
     className: "flex flex-between"
 })``;
 
-const ProductDetail = styled.div``;
+const ProductDetail = styled.div.attrs({
+    className: "flex flex-between"
+})`
+    flex:2;
+`;
 
-const Image = styled.img``;
+const Image = styled.img`
+    width: 200px;
+`;
 
 const Details = styled.div``;
 
@@ -115,7 +121,9 @@ const ProductColor = styled.div``;
 
 const ProductSize = styled.span``;
 
-const PriceDetail = styled.div``;
+const PriceDetail = styled.div`
+    flex:1;
+`;
 
 const ProductAmountContainer = styled.div``;
 
