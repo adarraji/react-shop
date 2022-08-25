@@ -3,6 +3,8 @@ import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { sliderItems } from "../../data";
 import styled from "styled-components";
+import { mobile } from "../../responsive";
+
 
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
@@ -42,7 +44,9 @@ const Slider = () => {
 
 const Container = styled.div.attrs({
     className: "w-100 vh-100 flex relative overflow-hidden"
-})``;
+})`
+    ${mobile({ display: "none" })} 
+`;
 
 const Arrow = styled.div.attrs({
     className: "flex justify-center items-center absolute top-0 bottom-0 pointer o-50 z-2"

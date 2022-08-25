@@ -78,7 +78,7 @@ const Center = styled.div.attrs({
 const Logo = styled.h1.attrs({
     className: "tc"
 })`
-     ${mobile({ fontSize: "18px" })}   
+     ${mobile({ fontSize: "16px" })}   
 `;
 
 
