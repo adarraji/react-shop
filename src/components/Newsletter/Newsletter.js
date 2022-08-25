@@ -1,6 +1,8 @@
 import React from "react";
 import SendIcon from '@mui/icons-material/Send';
 import styled from "styled-components";
+import { mobile } from "../../responsive";
+
 
 const Container = styled.div.attrs({
     className: "flex justify-center items-center flex-column"
@@ -15,13 +17,18 @@ const Title = styled.h1.attrs({
 
 const Desc = styled.div.attrs({
     className: "f3 fw5 mb3"
-})``;
+})`
+    ${mobile({ textAlign: "center", fontSize: "20px" })}   
+
+`;
 
 const InputContainer = styled.p.attrs({
     className: "bg-white flex justify-between ba b--light-silver"
 })`
     width: 50%;
     height: 40px;
+    ${mobile({ width: "80%" })}   
+
 `;
 
 const Input = styled.p.attrs({
@@ -50,16 +57,6 @@ const Newsletter = () => {
                 </Button>
             </InputContainer>
         </Container>
-        // <div className="newsletter flex justify-center items-center flex-column">
-        //     <h1 className="f1 mb3">Newsletter</h1>
-        //     <div className="f3 fw5 mb3">Get timely updates from your favorite products.</div>
-        //     <div className="input-container bg-white flex justify-between ba b--light-silver">
-        //         <input className="pa2 br-none flex-8" placeholder="Your email" />
-        //         <button className="br-none flex-1 bg-teal white flex justify-center items-center">
-        //             <SendIcon />
-        //         </button>
-        //     </div>
-        // </div>
     )
 }
 
