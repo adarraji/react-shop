@@ -2,17 +2,23 @@ import React from "react";
 import "./Product.css";
 import { popularProducts } from "../../data";
 import Product from "./Product";
+import styled from "styled-components";
+
 
 const Products = () => {
     return (
-        <div className="pa4 flex justify-between flex-wrap">
+        <Container className="pa4 flex justify-between flex-wrap">
             {
                 popularProducts.map(item => (
                     <Product item={item} key={item.id} />
                 ))
             }
-        </div>
+        </Container>
     )
 }
+
+const Container = styled.div.attrs({
+    className: "pa4 flex justify-between flex-wrap"
+})``;
 
 export default Products
