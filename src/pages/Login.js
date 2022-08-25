@@ -1,5 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
+import { mobile } from "../responsive";
+
 
 const Login = () => {
     return (
@@ -29,6 +31,7 @@ const Container = styled.div.attrs({
 const Wrapper = styled.div.attrs({
     className: "pa3 w-30 bg-white tl"
 })`
+    ${mobile({ width: "75%" })}
 `;
 
 const Title = styled.h1.attrs({

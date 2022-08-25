@@ -123,7 +123,7 @@ const Right = styled.div.attrs({
     className: "flex-1 pa3"
 })`
     flex: 1;
-    ${mobile({ backgroundColor: "lightgray" })}
+    ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem = styled.div.attrs({
