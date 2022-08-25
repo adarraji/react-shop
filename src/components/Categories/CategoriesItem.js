@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../responsive";
+
 
 const CategoriesItem = ({ item }) => {
     return (
@@ -23,6 +25,7 @@ const Image = styled.img.attrs({
     className: "h-100 w-100"
 })`
      object-fit: cover;
+     ${mobile({ height: "20vh" })}   
 `;
 
 const Info = styled.div.attrs({
