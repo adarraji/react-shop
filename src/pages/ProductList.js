@@ -4,14 +4,50 @@ import Navbar from "../components/Navbar/Navbar";
 import Products from "../components/Products/Products";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
+import styled from 'styled-components';
+
 
 const ProductList = () => {
     return (
-        <div>
+        <Container>
             <Announcement />
             <Navbar />
-            <h1 className="ma3">Dresses</h1>
-            <div className="flex justify-between">
+            <Title>Dresses</Title>
+            <FilterContainer>
+                <Filter>
+                    <FilterText>Filter Products:</FilterText>
+                    <Select>
+                        <Option disabled selected>
+                            Color
+                        </Option>
+                        <Option>White</Option>
+                        <Option>Black</Option>
+                        <Option>Red</Option>
+                        <Option>Blue</Option>
+                        <Option>Yellow</Option>
+                        <Option>Green</Option>
+                    </Select>
+                    <Select>
+                        <Option disabled selected>
+                            Size
+                        </Option>
+                        <Option>XS</Option>
+                        <Option>S</Option>
+                        <Option>M</Option>
+                        <Option>L</Option>
+                        <Option>XL</Option>
+                    </Select>
+                </Filter>
+                <Filter>
+                    <FilterText>Sort Products:</FilterText>
+                    <Select>
+                        <Option selected>Newest</Option>
+                        <Option>Price (asc)</Option>
+                        <Option>Price (desc)</Option>
+                    </Select>
+                </Filter>
+            </FilterContainer>
+            {/* <div className="flex justify-between">
                 <div className="ma3">
                     <span className="f5 fw6 mr3">Filter Products:</span>
                     <select className="pa2 mr3" name="color" id="color" defaultValue={"DEFAULT"}>
@@ -40,12 +76,36 @@ const ProductList = () => {
                         <option value="prrice-desc">Price (desc)</option>
                     </select>
                 </div>
-            </div>
+            </div> */}
             <Products />
             <Newsletter />
             <Footer />
-        </div>
+        </Container>
     )
 }
+
+const Container = styled.div``;
+
+const Title = styled.h1.attrs({
+    className: "ma3"
+})``;
+
+const FilterContainer = styled.div.attrs({
+    className: "flex justify-between"
+})``;
+
+const Filter = styled.div.attrs({
+    className: "ma3"
+})``;
+
+const FilterText = styled.span.attrs({
+    className: "f5 fw6 mr3"
+})``;
+
+const Select = styled.select.attrs({
+    className: "pa2 mr3"
+})``;
+
+const Option = styled.option``;
 
 export default ProductList
