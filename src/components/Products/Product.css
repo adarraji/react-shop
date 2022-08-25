@@ -1,8 +1,0 @@
-.product:hover .product-info {
-    opacity: 1;
-}
-
-.product-info>.product-icon:hover {
-    background-color: #e9f5f5;
-    transform: scale(1.1);
-}
