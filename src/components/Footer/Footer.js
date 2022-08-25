@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -7,63 +6,126 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import RoomIcon from '@mui/icons-material/Room';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import styled from "styled-components";
 
 const Footer = () => {
     return (
-        <div className="flex">
-            <div className="flex-1 pa3 flex flex-column tl">
-                <h1 className="pl2">Ecommerce Store</h1>
-                <div className="ma0 mt2 mb2 pl2">{"There are many variations of passages of Lorem Ipsum available, but The majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable."}</div>
-                <div className="flex">
-                    <div className="circle-40 white ma2 flex justify-center items-center bg-facebook">
+        <Container>
+            <Left>
+                <Logo>Ecommerce Store</Logo>
+                <Desc>
+                    There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by injected
+                    humour, or randomised words which don’t look even slightly believable.
+                </Desc>
+                <SocialContainer>
+                    <SocialIcon color="3B5999">
                         <FacebookIcon />
-                    </div>
-                    <div className="circle-40 white ma2 flex justify-center items-center bg-instagram">
+                    </SocialIcon>
+                    <SocialIcon color="E4405F">
                         <InstagramIcon />
-                    </div>
-                    <div className="circle-40 white ma2 flex justify-center items-center bg-twitter">
+                    </SocialIcon>
+                    <SocialIcon color="55ACEE">
                         <TwitterIcon />
-                    </div>
-                    <div className="circle-40 white ma2 flex justify-center items-center bg-pintrest">
+                    </SocialIcon>
+                    <SocialIcon color="E60023">
                         <PinterestIcon />
-                    </div>
-                </div>
-            </div>
-            <div className="flex-1 pa3 tl">
-                <h3 className="mb3">Useful Links</h3>
-                <ul className="ma0 pa0 list flex flex-wrap">
-                    <li className="mb1 w-50">Home</li>
-                    <li className="mb1 w-50">Cart</li>
-                    <li className="mb1 w-50">Man Fashion</li>
-                    <li className="mb1 w-50">Woman Fashion</li>
-                    <li className="mb1 w-50">Accessories</li>
-                    <li className="mb1 w-50">My Account</li>
-                    <li className="mb1 w-50">Order Tracking</li>
-                    <li className="mb1 w-50">Wishlist</li>
-                    <li className="mb1 w-50">Wishlist</li>
-                    <li className="mb1 w-50">Terms</li>
-                </ul>
-            </div>
-            <div className="flex-1 pa3 tl">
-                <h3>Contact</h3>
-                <div className="mb3 flex items-center">
-                    <RoomIcon className="mr1" />
-                    622 Dixie Path , South Tobinchester 98336
-                </div>
-                <div className="mb3 flex items-center">
-                    <LocalPhoneIcon className="mr1" />
-                    +1 234 56 78
-                </div>
-                <div className="mb3 flex items-center">
-                    <MailOutlineIcon className="mr1" />
-                    contact@ad.dev
-                </div>
-                <div className="w-50">
-                    <img src={"https://i.ibb.co/Qfvn4z6/payment.png"} alt="payment" />
-                </div>
-            </div>
-        </div>
+                    </SocialIcon>
+                </SocialContainer>
+            </Left>
+            <Center>
+                <Title>Useful Links</Title>
+                <List>
+                    <ListItem>Home</ListItem>
+                    <ListItem>Cart</ListItem>
+                    <ListItem>Man Fashion</ListItem>
+                    <ListItem>Woman Fashion</ListItem>
+                    <ListItem>Accessories</ListItem>
+                    <ListItem>My Account</ListItem>
+                    <ListItem>Order Tracking</ListItem>
+                    <ListItem>Wishlist</ListItem>
+                    <ListItem>Wishlist</ListItem>
+                    <ListItem>Terms</ListItem>
+                </List>
+            </Center>
+            <Right>
+                <Title>Contact</Title>
+                <ContactItem>
+                    <RoomIcon style={{ marginRight: "10px" }} /> 622 Dixie Path , South Tobinchester 98336
+                </ContactItem>
+                <ContactItem>
+                    <LocalPhoneIcon style={{ marginRight: "10px" }} /> +1 234 56 78
+                </ContactItem>
+                <ContactItem>
+                    <MailOutlineIcon style={{ marginRight: "10px" }} /> contact@lama.dev
+                </ContactItem>
+                <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+            </Right>
+        </Container>
     )
 }
+
+const Container = styled.div.attrs({
+    className: "flex tl"
+})``;
+
+const Left = styled.div.attrs({
+    className: "flex-1 pa3 flex flex-column"
+})`
+    flex: 1;
+`;
+
+const Logo = styled.h1.attrs({
+    className: ""
+})``;
+
+const Desc = styled.p.attrs({
+    className: "mv2 mh0"
+})``;
+
+const SocialContainer = styled.div.attrs({
+    className: "flex"
+})``;
+
+const SocialIcon = styled.div.attrs({
+    className: "white ma2 flex justify-center items-center"
+})`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #${props => props.color};
+`;
+
+const Center = styled.div.attrs({
+    className: "flex-1 pa3"
+})`
+    flex: 1;
+`;
+
+const Title = styled.h3.attrs({
+    className: "mb3"
+})``;
+
+const List = styled.ul.attrs({
+    className: "ma0 pa0 list flex flex-wrap"
+})``;
+
+const ListItem = styled.li.attrs({
+    className: "mb1 w-50"
+})``;
+
+const Right = styled.div.attrs({
+    className: "flex-1 pa3"
+})`
+    flex: 1;
+`;
+
+const ContactItem = styled.div.attrs({
+    className: "mb3 flex items-center"
+})``;
+
+const Payment = styled.img.attrs({
+    className: "w-50"
+})``;
 
 export default Footer
