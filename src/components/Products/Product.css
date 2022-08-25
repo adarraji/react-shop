@@ -1,34 +1,5 @@
-.flex-1 {
-    flex: 1;
-}
-
-.product {
-    background-color: #f5fbfd;
-    min-width: 280px;
-    height: 350px;
-}
-
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.product-info {
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease;
-}
-
 .product:hover .product-info {
     opacity: 1;
-}
-
-.product-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: all 0.5s ease;
 }
 
 .product-info>.product-icon:hover {

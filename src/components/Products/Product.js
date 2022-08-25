@@ -1,27 +1,78 @@
 import React from "react";
-import "./Product.css";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+import styled from "styled-components";
 
 const Product = ({ item }) => {
     return (
-        <div className="product relative flex justify-center items-center ma1">
-            <div className="circle bg-white absolute"></div>
-            <img className="h-75 z-2" src={item.img} alt="product" />
-            <div className="product-info w-100 h-100 absolute top-0 bottom-0 z-3 flex justify-center items-center pointer">
-                <div className="product-icon bg-white ma1 flex justify-center items-center">
+        <Container>
+            <Circle />
+            <Image src={item.img} alt="product" />
+            <Info>
+                <Icon>
                     <ShoppingCartOutlinedIcon />
-                </div>
-                <div className="product-icon bg-white ma1 flex justify-center items-center">
+                </Icon>
+                <Icon>
                     <SearchOutlinedIcon />
-                </div>
-                <div className="product-icon bg-white ma1 flex justify-center items-center">
+                </Icon>
+                <Icon>
                     <FavoriteBorderOutlinedIcon />
-                </div>
-            </div>
-        </div>
+                </Icon>
+            </Info>
+        </Container>
     )
 }
+
+const Info = styled.div.attrs({
+    className: "w-100 h-100 absolute top-0 bottom-0 z-3 flex justify-center items-center pointer"
+})`
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+`;
+
+const Container = styled.div.attrs({
+    className: "relative flex justify-center items-center ma1"
+})`
+    flex: 1;
+    background-color: #f5fbfd;
+    min-width: 280px;
+    height: 350px;
+
+    &:hover ${Info}{
+    opacity: 1;
+  }
+`;
+
+const Circle = styled.div.attrs({
+    className: "bg-white absolute"
+})`
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+`;
+
+const Image = styled.img.attrs({
+    className: "h-75 z-2"
+})``;
+
+
+
+
+const Icon = styled.div.attrs({
+    className: "bg-white ma1 flex justify-center items-center"
+})`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+
+    &:hover {
+    background-color: #e9f5f5;
+    transform: scale(1.1);
+  }
+`;
+
 
 export default Product
