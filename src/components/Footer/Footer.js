@@ -7,6 +7,8 @@ import RoomIcon from '@mui/icons-material/Room';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import styled from "styled-components";
+import { mobile } from "../../responsive";
+
 
 const Footer = () => {
     return (
@@ -67,7 +69,9 @@ const Footer = () => {
 
 const Container = styled.div.attrs({
     className: "flex tl"
-})``;
+})`
+    ${mobile({ flexDirection: "column" })}
+`;
 
 const Left = styled.div.attrs({
     className: "flex-1 pa3 flex flex-column"
@@ -100,6 +104,7 @@ const Center = styled.div.attrs({
     className: "flex-1 pa3"
 })`
     flex: 1;
+    ${mobile({ display: "none" })}   
 `;
 
 const Title = styled.h3.attrs({
