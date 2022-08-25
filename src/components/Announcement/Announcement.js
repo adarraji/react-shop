@@ -1,12 +1,20 @@
 import React from "react";
-import "./Announcement.css";
+import styled from "styled-components";
 
 const Announcement = () => {
     return (
-        <div className="h2 f4 fw5 white flex justify-center items-center announce-container">
+        <Container className="h2 f4 fw5 white flex justify-center items-center announce-container">
             {"Super Deal! Free Shipping on Orders Over 50%"}
-        </div>
+        </Container>
     )
 }
+
+const Container = styled.div.attrs({
+    className: "f4 fw5 white flex justify-center items-center announce-container"
+})`
+    background-color: teal;
+    height: 30px;
+`;
+
 
 export default Announcement
