@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Announcement = () => {
     return (
-        <Container className="h2 f4 fw5 white flex justify-center items-center announce-container">
+        <Container className="h2 f5 fw5 white flex justify-center items-center announce-container">
             {"Super Deal! Free Shipping on Orders Over 50%"}
         </Container>
     )
