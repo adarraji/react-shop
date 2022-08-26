@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
+import { mobile } from "../responsive";
 
 const Cart = () => {
     return (
@@ -106,7 +107,9 @@ const Container = styled.div``;
 
 const Wrapper = styled.div.attrs({
     className: "pa3"
-})``;
+})`
+    ${mobile({ padding: "10px" })}
+`;
 
 const Title = styled.h1.attrs({
     className: "fw3 tc"
@@ -124,7 +127,9 @@ const TopButton = styled.button.attrs({
     color: ${props => props.type === "filled" && "white"};
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+    ${mobile({ display: "none" })}
+`;
 
 const TopText = styled.span.attrs({
     className: "underline pointer mv0 mh2"
@@ -133,7 +138,9 @@ const TopText = styled.span.attrs({
 
 const Bottom = styled.div.attrs({
     className: "flex justify-between tl"
-})``;
+})`
+    ${mobile({ flexDirection: "column" })}
+`;
 
 const Info = styled.div`
     flex:3;
@@ -147,7 +154,9 @@ const HR = styled.hr`
 
 const Product = styled.div.attrs({
     className: "flex flex-between"
-})``;
+})`
+    ${mobile({ flexDirection: "column" })}
+`;
 
 const ProductDetail = styled.div.attrs({
     className: "flex flex-between"
@@ -188,11 +197,15 @@ const ProductAmountContainer = styled.div.attrs({
 
 const ProductAmount = styled.div.attrs({
     className: "f4 ma2"
-})``;
+})`
+    ${mobile({ margin: "5px 15px" })}
+`;
 
 const ProductPrice = styled.div.attrs({
     className: "f3 fw2"
-})``;
+})`
+    ${mobile({ marginBottom: "20px" })}
+`;
 
 
 const Summary = styled.div.attrs({

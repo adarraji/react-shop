@@ -4,12 +4,12 @@ import "./App.css";
 // import Login from "./pages/Login";
 // import Register from "./pages/Register";
 // import ProductList from "./pages/ProductList";
-import ProductItem from "./pages/ProductItem";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
     <div className="App">
-      <ProductItem />
+      <Cart />
     </div>
   );
 }
