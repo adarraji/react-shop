@@ -6,10 +6,12 @@ import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
 import styled from 'styled-components';
 import { mobile } from "../responsive";
+import { useLocation } from "react-router-dom";
 
 
 
 const ProductList = () => {
+    const location = useLocation();
     return (
         <Container>
             <Announcement />
