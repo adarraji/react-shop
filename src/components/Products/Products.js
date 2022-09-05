@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 
 const Products = ({ cat, filters, sort }) => {
+    console.log(cat, filters, sort);
     return (
         <Container className="pa4 flex justify-between flex-wrap">
             {

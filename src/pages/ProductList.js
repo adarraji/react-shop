@@ -53,13 +53,13 @@ const ProductList = () => {
                 <Filter>
                     <FilterText >Sort Products:</FilterText>
                     <Select onChange={event => setSort(event.target.value)} name="sort" defaultValue="Newest">
-                        <Option vlaue="newest">Newest</Option>
-                        <Option vlaue="asc">Price (asc)</Option>
-                        <Option vlaue="desc">Price (desc)</Option>
+                        <Option value="newest">Newest</Option>
+                        <Option value="asc">Price (asc)</Option>
+                        <Option value="desc">Price (desc)</Option>
                     </Select>
                 </Filter>
             </FilterContainer>
-            <Products cat={cat} filters={filters} sort={sort}/ >
+            <Products cat={cat} filters={filters} sort={sort} />
             <Newsletter />
             <Footer />
         </Container>
