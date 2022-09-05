@@ -18,7 +18,8 @@ const ProductList = () => {
     const handleFilters = (event) => {
         const value = event.target.value;
         setFilters({
-            [event.target.name]: value
+            ...filter,
+            [event.target.name]: value,
         })
     }
 
