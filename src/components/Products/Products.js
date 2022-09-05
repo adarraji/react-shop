@@ -4,7 +4,7 @@ import Product from "./Product";
 import styled from "styled-components";
 
 
-const Products = () => {
+const Products = ({ cat, filters, sort }) => {
     return (
         <Container className="pa4 flex justify-between flex-wrap">
             {
