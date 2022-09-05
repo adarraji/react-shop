@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Announcement from "../components/Announcement/Announcement";
 import Navbar from "../components/Navbar/Navbar";
 import Products from "../components/Products/Products";
@@ -13,6 +13,7 @@ import { useLocation } from "react-router-dom";
 const ProductList = () => {
     const location = useLocation();
     const cat = location.pathname.split("/")[2];
+    const [filter, setFilter] = useState({});
     return (
         <Container>
             <Announcement />
@@ -21,7 +22,7 @@ const ProductList = () => {
             <FilterContainer>
                 <Filter>
                     <FilterText>Filter Products:</FilterText>
-                    <Select name="color" defaultValue="Color">
+                    <Select onChange={handleFilters} name="color" defaultValue="Color">
                         <Option disabled>Color</Option>
                         <Option>White</Option>
                         <Option>Black</Option>
@@ -30,7 +31,7 @@ const ProductList = () => {
                         <Option>Yellow</Option>
                         <Option>Green</Option>
                     </Select>
-                    <Select name="size" defaultValue="Size">
+                    <Select onChange={handleFilters} name="size" defaultValue="Size">
                         <Option disabled>Size</Option>
                         <Option>XS</Option>
                         <Option>S</Option>
