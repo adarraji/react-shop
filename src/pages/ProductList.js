@@ -13,7 +13,17 @@ import { useLocation } from "react-router-dom";
 const ProductList = () => {
     const location = useLocation();
     const cat = location.pathname.split("/")[2];
-    const [filter, setFilter] = useState({});
+    const [filter, setFilters] = useState({});
+
+    const handleFilters = (event) => {
+        const value = event.target.value;
+        setFilters({
+            [event.target.name]: value
+        })
+    }
+
+    console.log(filter);
+
     return (
         <Container>
             <Announcement />
