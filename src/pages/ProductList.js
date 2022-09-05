@@ -13,7 +13,8 @@ import { useLocation } from "react-router-dom";
 const ProductList = () => {
     const location = useLocation();
     const cat = location.pathname.split("/")[2];
-    const [filter, setFilters] = useState({});
+    const [filter, setFilters] = useState({})
+    const [sort, setSort] = useState("newest");
 
     const handleFilters = (event) => {
         const value = event.target.value;
@@ -22,8 +23,6 @@ const ProductList = () => {
             [event.target.name]: value,
         })
     }
-
-    console.log(filter);
 
     return (
         <Container>
@@ -49,14 +48,14 @@ const ProductList = () => {
                         <Option>M</Option>
                         <Option>L</Option>
                         <Option>XL</Option>
-                    </Select>
+                    </Select>s
                 </Filter>
                 <Filter>
-                    <FilterText>Sort Products:</FilterText>
-                    <Select name="sort" defaultValue="Newest">
-                        <Option >Newest</Option>
-                        <Option>Price (asc)</Option>
-                        <Option>Price (desc)</Option>
+                    <FilterText >Sort Products:</FilterText>
+                    <Select onChange={event => setSort(event.target.value)} name="sort" defaultValue="Newest">
+                        <Option vlaue="newest">Newest</Option>
+                        <Option vlaue="asc">Price (asc)</Option>
+                        <Option vlaue="desc">Price (desc)</Option>
                     </Select>
                 </Filter>
             </FilterContainer>
