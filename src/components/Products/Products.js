@@ -32,7 +32,6 @@ const Products = ({ cat, filters, sort }) => {
                 )
             })
         );
-        console.log(filteredProducts)
     }, [cat, filters, products]);
 
     useEffect(() => {
@@ -54,9 +53,9 @@ const Products = ({ cat, filters, sort }) => {
     return (
         <Container className="pa4 flex justify-between flex-wrap">
             {
-                filteredProducts.map(item => (
-                    <Product item={item} key={item.id} />
-                ))
+                cat
+                    ? filteredProducts.map(item => <Product item={item} key={item.id} />)
+                    : products.slice(0, 8).map(item => <Product item={item} key={item.id} />)
             }
         </Container>
     )
