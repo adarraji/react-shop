@@ -15,17 +15,32 @@ const Products = ({ cat, filters, sort }) => {
             try {
                 const res = await axios.get(cat ? `http://localhost:5000/api/products?category=${cat}` : "http://localhost:5000/api/products");
                 setProducts(res.data);
-            } catch (err) {
-
-            }
+            } catch (err) { }
         }
         getProducts();
-    }, [cat])
+    }, [cat]);
+
+    useEffect(() => {
+        cat && setFilteredProducts(
+            products.filter((item) => {
+                return (
+                    Object.entries(filters).every(([key, value]) => {
+                        return (
+                            item[key].includes(value)
+                        )
+                    })
+                )
+            })
+        );
+        console.log(filteredProducts)
+    }, [cat, filters, products]);
+
+    ;
 
     return (
         <Container className="pa4 flex justify-between flex-wrap">
             {
-                popularProducts.map(item => (
+                filteredProducts.map(item => (
                     <Product item={item} key={item.id} />
                 ))
             }
