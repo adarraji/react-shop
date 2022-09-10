@@ -15,6 +15,7 @@ const ProductItem = () => {
     const location = useLocation();
     const id = location.pathname.split("/")[2];
     const [product, setProduct] = useState({});
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         const getProduct = async () => {
@@ -26,6 +27,11 @@ const ProductItem = () => {
         };
         getProduct();
     }, [id]);
+
+    const handleQuantity = (type) => {
+        type === "dec" ? setQuantity(quantity - 1) : setQuantity(quantity + 1)
+    }
+
     return (
         <Container>
             <Announcement />
@@ -53,9 +59,9 @@ const ProductItem = () => {
                     </FilterContainer>
                     <AddContainer>
                         <AmountContainer>
-                            <RemoveIcon />
-                            <Amount>1</Amount>
-                            <AddIcon />
+                            <RemoveIcon onClick={() => handleQuantity("dec")} />
+                            <Amount>{quantity}</Amount>
+                            <AddIcon onClick={() => handleQuantity("inc")} />
                         </AmountContainer>
                         <Button>ADD TO CART</Button>
                     </AddContainer>
