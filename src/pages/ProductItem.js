@@ -41,9 +41,8 @@ const ProductItem = () => {
                     <FilterContainer>
                         <Filter>
                             <FilterTitle>Color</FilterTitle>
-                            <FilterColor color="black"></FilterColor>
-                            <FilterColor color="darkblue"></FilterColor>
-                            <FilterColor color="gray"></FilterColor>
+                            {product.color?.map(c => <FilterColor color={c} key={c}></FilterColor>)}
+
                         </Filter>
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
