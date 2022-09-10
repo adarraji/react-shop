@@ -35,12 +35,8 @@ const ProductItem = () => {
                     <Image src={product.img} />
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>Denim Jumpsuit</Title>
-                    <Desc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                        venenatis, dolor in finibus malesuada, lectus ipsum porta nunc, at
-                        iaculis arcu nisi sed mauris. Nulla fermentum vestibulum ex, eget
-                        tristique tortor pretium ut. Curabitur elit justo, consequat id
-                        condimentum ac, volutpat ornare.</Desc>
+                    <Title>{product.title}</Title>
+                    <Desc>{product.desc}</Desc>
                     <Price>$ 20</Price>
                     <FilterContainer>
                         <Filter>
