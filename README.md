@@ -10,6 +10,7 @@
 * styled-components
 * Material-UI
 * React Router
+* React Hooks
 * React Redux / Redux toolkit
 
 
