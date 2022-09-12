@@ -38,6 +38,10 @@ const ProductItem = () => {
         }
     }
 
+    const handleClick = () => {
+
+    }
+
     return (
         <Container>
             <Announcement />
@@ -73,7 +77,7 @@ const ProductItem = () => {
                             <Amount>{quantity}</Amount>
                             <AddIcon onClick={() => handleQuantity("inc")} />
                         </AmountContainer>
-                        <Button>ADD TO CART</Button>
+                        <Button onClick={handleClick}>ADD TO CART</Button>
                     </AddContainer>
                 </InfoContainer>
             </Wrapper>
