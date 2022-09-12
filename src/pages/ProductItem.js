@@ -42,7 +42,7 @@ const ProductItem = () => {
     }
 
     const handleClick = () => {
-        dispatch(addProduct({ product: product, quantity: quantity, price: product.price * quantity }));
+        dispatch(addProduct({ ...product, quantity, color, size }));
     }
 
     return (
