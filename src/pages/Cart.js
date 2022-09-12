@@ -7,6 +7,8 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
+import StripeCheckout from 'react-stripe-checkout';
+
 
 const Cart = () => {
     const cart = useSelector(state => state.cart);
