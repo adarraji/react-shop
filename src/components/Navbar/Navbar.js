@@ -7,8 +7,8 @@ import { mobile } from "../../responsive";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
-    const cart = useSelector(state => state.cart);
-    console.log(cart);
+    const quantity = useSelector(state => state.cart.quantity);
+    console.log(quantity);
     return (
         <Container>
             <Wrapper>
