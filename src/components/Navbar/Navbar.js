@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 
 const Navbar = () => {
     const quantity = useSelector(state => state.cart.quantity);
-    console.log(quantity);
     return (
         <Container>
             <Wrapper>
@@ -26,7 +25,7 @@ const Navbar = () => {
                     <MenuItem>REGISTER</MenuItem>
                     <MenuItem>SIGNIN</MenuItem>
                     <MenuItem>
-                        <Badge badgeContent={4} color="primary">
+                        <Badge badgeContent={quantity} color="primary">
                             <ShoppingCartOutlinedIcon />
                         </Badge>
                     </MenuItem>
