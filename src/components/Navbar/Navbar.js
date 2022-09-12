@@ -4,8 +4,11 @@ import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+    const cart = useSelector(state => state.cart);
+    console.log(cart);
     return (
         <Container>
             <Wrapper>
