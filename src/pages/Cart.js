@@ -9,6 +9,7 @@ import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from 'react-stripe-checkout';
 
+const STRIPE_PUB_KEY = process.env.REACT_APP_STRIPE_PUB_KEY
 
 const Cart = () => {
     const cart = useSelector(state => state.cart);
