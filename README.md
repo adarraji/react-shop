@@ -12,5 +12,6 @@
 * React Router
 * React Hooks
 * React Redux / Redux toolkit
+* React Stripe Checkout
 
 
