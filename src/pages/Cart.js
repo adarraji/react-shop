@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Announcement from "../components/Announcement/Announcement";
 import Navbar from "../components/Navbar/Navbar";
@@ -9,10 +9,15 @@ import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from 'react-stripe-checkout';
 
-const STRIPE_PUB_KEY = process.env.REACT_APP_STRIPE_PUB_KEY
+const STRIPE_PUB_KEY = process.env.REACT_APP_STRIPE_PUB_KEY;
 
 const Cart = () => {
     const cart = useSelector(state => state.cart);
+    const [stripeToken, setStripeToken] = useState(null);
+    const onToken = (token) => {
+        setStripeToken(token)
+    }
+    console.log(stripeToken);
     return (
         <Container>
             <Announcement />
@@ -77,7 +82,18 @@ const Cart = () => {
                             <SummaryItemText>Total</SummaryItemText>
                             <SummaryItemPrice>{cart.total}</SummaryItemPrice>
                         </SummaryItem>
-                        <SummaryButton>CHECKOUT NOW</SummaryButton>
+                        <StripeCheckout
+                            name="AD Shop"
+                            image="https://cdn.pixabay.com/photo/2022/08/06/17/27/artificial-intelligence-7369048_960_720.jpg"
+                            shippingAddress
+                            billingAddress
+                            description="  Your total is $20"
+                            amount={2000}
+                            token={onToken}
+                            stripeKey={STRIPE_PUB_KEY}
+                        >
+                            <SummaryButton>Checkout Now</SummaryButton>
+                        </StripeCheckout>
                     </Summary>
                 </Bottom>
             </Wrapper>
@@ -214,7 +230,7 @@ const SummaryItemText = styled.span``;
 const SummaryItemPrice = styled.span``;
 
 const SummaryButton = styled.button.attrs({
-    className: "w-100 pa3 white bg-black fw6"
+    className: "w-100 pa3 white bg-black fw6 pointer"
 })``;
 
 
