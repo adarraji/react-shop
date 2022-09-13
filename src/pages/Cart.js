@@ -34,7 +34,7 @@ const Cart = () => {
                 console.log(err)
             }
         }
-        if (stripeToken && cart.total !== 0) {
+        if (stripeToken && cart.total >= 1) {
             makeRequest();
         }
     }, [stripeToken, navigate, cart.total]);
