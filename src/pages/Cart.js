@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Announcement from "../components/Announcement/Announcement";
 import Navbar from "../components/Navbar/Navbar";
@@ -8,16 +8,56 @@ import AddIcon from '@mui/icons-material/Add';
 import { mobile } from "../responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from 'react-stripe-checkout';
+import { userRequest } from "../requestMethods";
+import { useNavigate } from "react-router-dom";
 
 const STRIPE_PUB_KEY = process.env.REACT_APP_STRIPE_PUB_KEY;
 
 const Cart = () => {
     const cart = useSelector(state => state.cart);
     const [stripeToken, setStripeToken] = useState(null);
+    let navigate = useNavigate();
     const onToken = (token) => {
         setStripeToken(token)
     }
-    console.log(stripeToken);
+
+    useEffect(() => {
+        const makeRequest = async () => {
+            try {
+                const res = await userRequest("/checkout/payment", {
+                    tokenId: stripeToken.id,
+                    amount: cart.total * 100
+                });
+                console.log(res.data);
+                navigate("/success");
+            } catch (err) {
+                console.log(err)
+            }
+        }
+        makeRequest();
+    }, [stripeToken, navigate, cart.total]);
+
+
+
+    // useEffect(() => {
+    //     const makeRequest = async () => {
+    //         try {
+    //             const res = await axios.post(
+    //                 "http://localhost:5000/api/checkout/payment", {
+    //                 tokenId: stripeToken.id,
+    //                 amount: 2000,
+    //             }
+    //             );
+    //             console.log(res.data);
+    //             navigate("/success");
+    //         } catch (err) {
+    //             console.log(err)
+    //         }
+    //     };
+    //     stripeToken && makeRequest();
+    // }, [stripeToken, navigate]);
+
+
     return (
         <Container>
             <Announcement />
