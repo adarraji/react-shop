@@ -11,7 +11,7 @@ import StripeCheckout from 'react-stripe-checkout';
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router-dom";
 
-const STRIPE_PUB_KEY = process.env.REACT_APP_STRIPE_PUB_KEY;
+const STRIPE_PUB_KEY = `${process.env.REACT_APP_STRIPE_PUB_KEY}`;
 
 const Cart = () => {
     const cart = useSelector(state => state.cart);
@@ -24,39 +24,20 @@ const Cart = () => {
     useEffect(() => {
         const makeRequest = async () => {
             try {
-                const res = await userRequest("/checkout/payment", {
+                const res = await userRequest.post("/checkout/payment", {
                     tokenId: stripeToken.id,
                     amount: cart.total * 100
                 });
-                console.log(res.data);
-                navigate("/success");
+                navigate("/success", { data: res.data });
+                console.log(res.data)
             } catch (err) {
                 console.log(err)
             }
         }
-        makeRequest();
+        if (stripeToken && cart.total !== 0) {
+            makeRequest();
+        }
     }, [stripeToken, navigate, cart.total]);
-
-
-
-    // useEffect(() => {
-    //     const makeRequest = async () => {
-    //         try {
-    //             const res = await axios.post(
-    //                 "http://localhost:5000/api/checkout/payment", {
-    //                 tokenId: stripeToken.id,
-    //                 amount: 2000,
-    //             }
-    //             );
-    //             console.log(res.data);
-    //             navigate("/success");
-    //         } catch (err) {
-    //             console.log(err)
-    //         }
-    //     };
-    //     stripeToken && makeRequest();
-    // }, [stripeToken, navigate]);
-
 
     return (
         <Container>
