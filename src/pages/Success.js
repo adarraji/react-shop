@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -29,7 +29,20 @@ const Desc = styled.p`
 
 const Success = () => {
     const location = useLocation();
-    console.log(location);
+    const data = location.state.stripeData;
+    const cart = location.state.cart;
+    const [orderId, setOrderId] = useState();
+
+    useEffect(() => {
+        try {
+            console.log(data.billing_details.address);
+            console.log(cart.products);
+            console.log(cart.total);
+            console.log(cart.quantity);
+        } catch { }
+
+    }, [data, cart]);
+
     return (
         <Container>
             <Wrapper>
