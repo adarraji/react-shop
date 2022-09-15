@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from 'styled-components';
+import { login } from "../redux/apiCalls";
 import { mobile } from "../responsive";
 
 
@@ -9,14 +10,18 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const dispatch = useDispatch();
     const { isFetching, error } = useSelector((state) => state.user);
+    const handleClick = (e) => {
+        e.preventDefault();
+        login(dispatch, { username: username, password: password })
+    }
     return (
         <Container>
             <Wrapper>
                 <Title>SIGN IN</Title>
                 <Form>
-                    <Input placeholder="username" />
-                    <Input placeholder="password" />
-                    <Button>LOG IN</Button>
+                    <Input placeholder="username" onChange={e => setUsername(e.target.value)} />
+                    <Input placeholder="password" onChange={e => setPassword(e.target.value)} />
+                    <Button onClick={handleClick}>LOG IN</Button>
                     <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
                     <Link>CREATE A NEW ACCOUNT</Link>
 
