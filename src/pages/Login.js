@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styled from 'styled-components';
 import { mobile } from "../responsive";
 
@@ -6,6 +7,8 @@ import { mobile } from "../responsive";
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const dispatch = useDispatch();
+    const { isFetching, error } = useSelector((state) => state.user);
     return (
         <Container>
             <Wrapper>
