@@ -10,7 +10,7 @@ import Register from "./pages/Register";
 import Success from "./pages/Success";
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <Router>
       <Routes>
