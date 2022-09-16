@@ -22,6 +22,7 @@ const Login = () => {
                     <Input placeholder="username" onChange={e => setUsername(e.target.value)} />
                     <Input type="passowrd" placeholder="password" onChange={e => setPassword(e.target.value)} />
                     <Button onClick={handleClick} disabled={isFetching}>LOG IN</Button>
+                    {error && <Error>Something went wrong...</Error>}
                     <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
                     <Link>CREATE A NEW ACCOUNT</Link>
 
@@ -75,6 +76,14 @@ const Button = styled.button.attrs({
 const Link = styled.a.attrs({
     className: "mv2 mh0 f7 underline pointer"
 })``;
+
+
+const Error = styled.span.attrs({
+    className: "red"
+})`
+    flex: 1;
+    min-width: 40%;
+`;
 
 
 export default Login
