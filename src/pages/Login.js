@@ -21,7 +21,7 @@ const Login = () => {
                 <Form>
                     <Input placeholder="username" onChange={e => setUsername(e.target.value)} />
                     <Input type="passowrd" placeholder="password" onChange={e => setPassword(e.target.value)} />
-                    <Button onClick={handleClick}>LOG IN</Button>
+                    <Button onClick={handleClick} disabled={isFetching}>LOG IN</Button>
                     <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
                     <Link>CREATE A NEW ACCOUNT</Link>
 
@@ -65,7 +65,11 @@ const Button = styled.button.attrs({
     className: "w-40 pv2 ph3 white pointer f6 mv2"
 })`
     border: none;
-    background-color: teal;    
+    background-color: teal;
+    &:disabled {
+        color: green;
+        cursor: not-allowed;
+    }    
 `;
 
 const Link = styled.a.attrs({
