@@ -20,7 +20,7 @@ const Login = () => {
                 <Title>SIGN IN</Title>
                 <Form>
                     <Input placeholder="username" onChange={e => setUsername(e.target.value)} />
-                    <Input placeholder="password" onChange={e => setPassword(e.target.value)} />
+                    <Input type="passowrd" placeholder="password" onChange={e => setPassword(e.target.value)} />
                     <Button onClick={handleClick}>LOG IN</Button>
                     <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
                     <Link>CREATE A NEW ACCOUNT</Link>
