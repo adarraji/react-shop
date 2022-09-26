@@ -36,7 +36,7 @@ const Cart = () => {
         if (stripeToken && cart.total >= 1) {
             makeRequest();
         }
-    }, [stripeToken, navigate, cart.total]);
+    }, [stripeToken, navigate, cart, cart.total]);
 
     return (
         <Container>

@@ -31,7 +31,7 @@ const Success = () => {
     const location = useLocation();
     const data = location.state.stripeData;
     const cart = location.state.cart;
-    const [orderId, setOrderId] = useState();
+    // const [orderId, setOrderId] = useState();
 
     useEffect(() => {
         try {
