@@ -59,3 +59,4 @@ You can see the website [here](https://react-shop3.netlify.app/)
 
 ## Deploy status
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea77095e-eedc-4248-88f6-c28c20fcb200/deploy-status)](https://app.netlify.com/sites/react-shop3/deploys)
