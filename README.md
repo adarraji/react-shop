@@ -26,3 +26,14 @@ Add server url in  `src/requestMethods.js`
 Add Stripe publick key `STRIPE_PUB_KEY` in `src/pages/Cart.js`
 
 
+## Deployment
+
+Deployed on 
+You can see the website 
+
+## Authors
+
+- **Ali Darraji** - [https://github.com/adarraji](https://github.com/adarraji)
+
+## Deploy status
+
