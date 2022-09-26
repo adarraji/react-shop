@@ -1,7 +1,7 @@
 import axios from "axios";
+import { store } from "./redux/store";
 
-const BASE_URL = "http://localhost:5000/api/";
-const TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzIwZWU0NmQ1MTcxZDI2YzY0NTNhZCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NjQyMjUwNDAsImV4cCI6MTY2NDQ4NDI0MH0.3kDpLIl4mMVXTmmYfabzFUDi0o91MnBcneQgouZEqFs";
+const BASE_URL = `${process.env.REACT_APP_SERVER}/api/`;
 
 export const publicRequest = axios.create({
     baseURL: BASE_URL,
@@ -10,5 +10,10 @@ export const publicRequest = axios.create({
 
 export const userRequest = axios.create({
     baseURL: BASE_URL,
-    headers: { token: `Bearer ${TOKEN}` }
+});
+
+userRequest.interceptors.request.use(function (config) {
+    let TOKEN = store.getState().user.accessToken;
+    config.headers["token"] = `Bearer ${TOKEN}`;
+    return config;
 });
