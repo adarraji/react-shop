@@ -21,10 +21,10 @@ Also you can find the React Admin Dashboard [here](https://github.com/adarraji/r
 * Tachyons
 * styled-components
 * Material-UI
+* React Stripe Checkout
 * React Router
 * React Hooks
 * React Redux / Redux toolkit
-* React Stripe Checkout
 
 
 ## Running the Application
