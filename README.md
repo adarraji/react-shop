@@ -60,3 +60,26 @@ You can see the website [here](https://react-shop3.netlify.app/)
 ## Deploy status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ea77095e-eedc-4248-88f6-c28c20fcb200/deploy-status)](https://app.netlify.com/sites/react-shop3/deploys)
+
+
+## Screenshots
+<br />
+
+Home Page
+
+<br />
+
+![Image 1](./images/image-01.png)
+<br />
+
+![Image 2](./images/image-03.png)
+<br />
+
+![Image 3](./images/image-02.png)
+<br />
+
+![Image 4](./images/image-04.png)
+<br />
+
+<br />
+<br />
