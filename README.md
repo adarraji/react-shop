@@ -83,6 +83,7 @@ You can see the website [here](https://react-shop3.netlify.app/)
 
 <br />
 <br />
+<br />
 
 
 ### Products / Categories Page
@@ -92,5 +93,61 @@ You can see the website [here](https://react-shop3.netlify.app/)
 ![Image 5](./images/image-05.png)
 <br />
 
+<br />
+<br />
+<br />
+
+### Single Product Page
+
+<br />
+
+![Image 6](./images/image-06.png)
+<br />
+
+<br />
+<br />
+<br />
+
+### Cart
+
+<br />
+
+![Image 7](./images/image-07.png)
+<br />
+
+<br />
+<br />
+<br />
+
+### Payment
+
+<br />
+
+![Image 8](./images/image-08.png)
+<br />
+
+<br />
+<br />
+<br />
+
+### SiginIn Page
+
+<br />
+
+![Image 9](./images/image-09.png)
+<br />
+
+<br />
+<br />
+<br />
+
+### Register Page
+
+<br />
+
+![Image 10](./images/image-10.png)
+<br />
+
+<br />
 <br />
 <br />
