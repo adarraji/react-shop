@@ -65,7 +65,7 @@ You can see the website [here](https://react-shop3.netlify.app/)
 ## Screenshots
 <br />
 
-Home Page
+### Home Page
 
 <br />
 
@@ -79,6 +79,17 @@ Home Page
 <br />
 
 ![Image 4](./images/image-04.png)
+<br />
+
+<br />
+<br />
+
+
+### Products / Categories Page
+
+<br />
+
+![Image 5](./images/image-05.png)
 <br />
 
 <br />
