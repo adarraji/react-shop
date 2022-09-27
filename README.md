@@ -130,7 +130,7 @@ You can see the website [here](https://react-shop3.netlify.app/)
 <br />
 <br />
 
-### SiginIn Page
+### SignIn Page
 
 <br />
 
