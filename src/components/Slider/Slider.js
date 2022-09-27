@@ -85,7 +85,7 @@ const ImgContainer = styled.div.attrs({
 const Image = styled.img.attrs({
     className: ""
 })`
-    height: 80%;
+    height: 80%;    
 `;
 
 const InfoContainer = styled.div.attrs({
