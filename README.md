@@ -72,10 +72,10 @@ Home Page
 ![Image 1](./images/image-01.png)
 <br />
 
-![Image 2](./images/image-03.png)
+![Image 2](./images/image-02.png)
 <br />
 
-![Image 3](./images/image-02.png)
+![Image 3](./images/image-03.png)
 <br />
 
 ![Image 4](./images/image-04.png)
