@@ -6,11 +6,7 @@ In this project I used functional reusable React components, React hooks, styled
 
 You can see the website [here](https://react-shop3.netlify.app/)
 
-This one part of the full solution. 
-
-The backend API is build with Node.js, Express.js and MongoDB You can see it here [here](https://github.com/adarraji/node-shop-api)
-
-Also you can find the React Admin Dashboard [here](https://github.com/adarraji/react-shop-admin)
+This is one of three parts of full stack eCommerce app. You can find the Node.js/MongoDB REST API backend [here](https://github.com/adarraji/node-shop-api) and the React Shop Admin Dashboard [here](https://github.com/adarraji/react-shop-admin)
 
 ## Built With
 
