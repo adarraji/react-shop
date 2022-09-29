@@ -23,6 +23,9 @@ const Navbar = () => {
                     <Logo>Ecommerce Store</Logo>
                 </Center>
                 <Right>
+                    <Link to="/">
+                        <MenuItem>HOME</MenuItem>
+                    </Link>
                     <Link to="/register">
                         <MenuItem>REGISTER</MenuItem>
                     </Link>
